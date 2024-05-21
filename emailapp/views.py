@@ -8,6 +8,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from .models import CustomUser
 from .serializers import UserSerializer, LoginSerializer, TokenSerializer
 
+
 class UserRegistrationView(APIView):
     permission_classes = [AllowAny]
 
@@ -18,7 +19,7 @@ class UserRegistrationView(APIView):
             send_mail(
                 'Welcome to My App',
                 'Thank you for registering!',
-                'your-email@gmail.com',
+                'shwetasaini250796@gmail.com',
                 [user.email],
                 fail_silently=False,
             )
